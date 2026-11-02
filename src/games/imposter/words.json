@@ -1,0 +1,8 @@
+{
+  "Food": ["Pizza", "Biryani", "Burger", "Sushi", "Ice cream", "Noodles", "Chocolate", "Pancakes", "Samosa", "Popcorn", "Sandwich", "Fried chicken", "Mango", "Cake"],
+  "Animals": ["Elephant", "Penguin", "Tiger", "Dolphin", "Kangaroo", "Owl", "Crocodile", "Giraffe", "Monkey", "Camel", "Bat", "Octopus", "Peacock", "Snake"],
+  "Places": ["Airport", "Hospital", "Library", "Beach", "Cinema", "Mosque", "Zoo", "Train station", "Supermarket", "Stadium", "Hotel", "Classroom", "Farm", "Bakery"],
+  "Objects": ["Umbrella", "Mirror", "Scissors", "Toothbrush", "Backpack", "Candle", "Headphones", "Wallet", "Clock", "Ladder", "Pillow", "Torch", "Bicycle", "Key"],
+  "Jobs": ["Doctor", "Pilot", "Teacher", "Chef", "Farmer", "Police officer", "Tailor", "Barber", "Driver", "Singer", "Engineer", "Fisherman", "Judge", "Painter"],
+  "Bangladesh": ["Rickshaw", "Hilsa", "Cox's Bazar", "Cha", "Cricket", "Jamdani", "Sundarbans", "Panta bhat", "CNG", "Kabaddi", "Pohela Boishakh", "Padma Bridge", "Fuchka", "Nakshi kantha"]
+}

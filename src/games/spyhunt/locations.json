@@ -1,0 +1,16 @@
+{
+  "Airport": ["Pilot", "Passenger", "Security officer", "Cleaner", "Baggage handler"],
+  "Hospital": ["Doctor", "Nurse", "Patient", "Visitor", "Pharmacist"],
+  "Beach": ["Lifeguard", "Tourist", "Ice cream seller", "Surfer", "Photographer"],
+  "Cinema": ["Usher", "Couple on a date", "Popcorn seller", "Film critic", "Kid with a big soda"],
+  "Restaurant": ["Chef", "Waiter", "Food critic", "Hungry customer", "Cashier"],
+  "School": ["Teacher", "Student", "Principal", "Janitor", "Canteen seller"],
+  "Train station": ["Conductor", "Commuter", "Ticket seller", "Pickpocket", "Tea vendor"],
+  "Wedding hall": ["Bride", "Groom", "Caterer", "Photographer", "Uncle who dances"],
+  "Zoo": ["Zookeeper", "Tourist", "School kid", "Vet", "Ticket seller"],
+  "Cricket stadium": ["Batter", "Umpire", "Commentator", "Die-hard fan", "Snack seller"],
+  "Launch ghat": ["Captain", "Passenger", "Porter", "Fish seller", "Ticket checker"],
+  "Cha stall": ["Tea maker", "Regular customer", "Rickshaw puller", "Student", "Newspaper reader"],
+  "Bazar": ["Shopkeeper", "Bargainer", "Fish seller", "Porter", "Shopper with a long list"],
+  "University campus": ["Professor", "Fresher", "Club president", "Library staff", "Final-year student"]
+}

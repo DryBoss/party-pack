@@ -1,0 +1,67 @@
+/* Hangman Friends, restyled to match the app's cream / ink / coral / lime look.
+   Scoped to .hf-root so nothing leaks out. :where() keeps element rules at zero
+   extra specificity, so the game's CSS modules still win where they set a value. */
+.hf-root {
+  --radius-lg: 0;
+  --radius-md: 0;
+  --radius-sm: 0;
+  --bg: var(--color-cream);
+  --surface: var(--color-paper);
+  --ink: var(--color-ink);
+  --muted: rgb(36 27 47 / 0.62);
+  --primary: var(--color-coral);
+  --primary-dark: var(--color-ink);
+  --primary-soft: #efe5cf;
+  --on-primary: var(--color-ink);
+  --success: var(--color-lime);
+  --success-dark: var(--color-ink);
+  --danger: #e5483a;
+  --danger-dark: var(--color-ink);
+  --danger-soft: #ffd9d3;
+  --danger-soft-shadow: var(--color-ink);
+  --gold: var(--color-lime);
+  --shadow-color: 36, 27, 47;
+  --shadow-opacity: 1;
+
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  overflow-y: auto;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  font-family: var(--font-sans);
+  user-select: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  animation: fadeIn 0.28s ease-out both;
+}
+.hf-root, .hf-root * { box-sizing: border-box; }
+
+:where(.hf-root) :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-display); font-weight: 700; color: var(--ink); margin: 0; line-height: 1.05;
+}
+:where(.hf-root) p { margin: 0; }
+:where(.hf-root) input {
+  outline: none; border: 3px solid var(--ink); border-radius: 0; color: var(--ink);
+  text-align: center; padding: 0.75rem 1.25rem; font-size: 1rem; font-family: var(--font-sans);
+  background-color: var(--surface);
+}
+:where(.hf-root) input:focus { outline: 3px solid var(--color-coral); outline-offset: 2px; }
+:where(.hf-root) button {
+  font-family: var(--font-display); font-weight: 600; color: var(--ink); width: 100%;
+  min-height: 3.25rem; padding: 0.85rem 1.75rem; margin: 0; font-size: 1.1rem;
+  border: 3px solid var(--ink); border-radius: 0; background-color: var(--primary);
+  box-shadow: 4px 4px 0 0 var(--ink); cursor: pointer; touch-action: manipulation;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+:where(.hf-root) button:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 6px 6px 0 0 var(--ink); }
+:where(.hf-root) button:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 2px 2px 0 0 var(--ink); }
+:where(.hf-root) button:focus-visible { outline: 3px solid var(--color-coral); outline-offset: 2px; }
+:where(.hf-root) button:disabled { cursor: not-allowed; opacity: 0.45; box-shadow: none; }
+
+:where(.hf-root) .btnGhost { background-color: var(--surface); color: var(--ink); }
+:where(.hf-root) .btnDanger { background-color: var(--danger-soft); color: var(--ink); }
+:where(.hf-root) .card {
+  position: relative; background-color: var(--surface); border: 3px solid var(--ink);
+  box-shadow: 6px 6px 0 0 var(--ink); padding: 2rem 1.5rem; width: 100%;
+}
